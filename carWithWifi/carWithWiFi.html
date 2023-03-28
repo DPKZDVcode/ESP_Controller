@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+
+<html>
+ 
+   <head>
+
+   	 	<title>WIFI CAR</title>
+
+        <link rel="stylesheet" href="wificar.css">
+
+  	</head>
+ 
+   	<body>
+
+   		<main>
+
+            <div>
+
+                <label for="ipAddress"> <font color="white">IP:</font></label>
+
+                <input type="text" id="ipAddress" placeholder="IP" value="192.168.137.153" name="ipAddress">    
+
+            </div>
+
+           
+            <button onclick = "OpenWebsocket()" id = "connectButton">CONNECT</button>
+
+            <button onclick = "CloseWebsocket()" disabled = "true" id = "disconnectButton">DISCONNECT</button>
+
+            <div>
+                
+                <label for="SendToEsp"> <font color="white">Send:</font></label>
+                <input type = "text" disabled="true" id="inputText" name="SendToEsp">
+
+            </div>
+
+            <button onclick = "SendData()"  disabled = "true" id = "sendButton">SEND</button>
+
+            <div id="dataSent"></div> 
+
+   			
+   		</main>
+
+      	<script src="car.js"></script>
+ 
+
+
+   	</body>
+
+
+</html>

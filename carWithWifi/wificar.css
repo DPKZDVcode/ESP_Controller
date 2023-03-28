@@ -1,0 +1,33 @@
+
+
+body{
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-row-gap: 5px;
+
+}
+
+.text{
+
+    color: white;
+}
+
+#dataSent{
+
+    height: 50px;
+    color: white;
+}
+
+
+     
